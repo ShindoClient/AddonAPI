@@ -1,10 +1,13 @@
 plugins {
-    kotlin("jvm") version "2.3.10"
-    kotlin("plugin.serialization") version "2.3.10"
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.kotlin.serialization)
 }
 
-group = "me.miki"
-version = "1.0.0"
+base {
+    group = "me.miki"
+    archivesName = "AddonAPI"
+    version = "1.0.0"
+}
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -22,6 +25,5 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    implementation(libs.kotlinx.serialization.json)
 }
