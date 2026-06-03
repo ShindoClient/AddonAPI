@@ -5,7 +5,10 @@ abstract class Setting(
     val description: String = "",
 ) {
     abstract val defaultValue: Any
+
     abstract fun get(): Any
+
     abstract fun set(value: Any)
+
     open fun reset() = set(defaultValue)
 }
