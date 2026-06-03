@@ -1,5 +1,7 @@
 package me.miki.addon.api.hud
 
+import me.miki.addon.api.graphics.NanoVG
+
 class HUDRegistration(
     val id: String,
     val name: String,
@@ -10,6 +12,7 @@ data class HUDContext(
     val width: Float,
     val height: Float,
     val partialTicks: Float,
+    val nanoVG: NanoVG? = null,
 )
 
 object HUDRegistry {
