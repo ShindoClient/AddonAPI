@@ -1,5 +1,6 @@
 package me.miki.addon.api
 
+import me.miki.addon.api.command.AddonCommand
 import me.miki.addon.api.event.EventManager
 import me.miki.addon.api.hud.AddonHUD
 import me.miki.addon.api.logger.AddonLogger
@@ -12,6 +13,9 @@ abstract class ShindoAddon {
 
     /** HUD elements to register with the client's HudEditor. */
     open val huds: List<AddonHUD> = emptyList()
+
+    /** Chat commands to register with the client's command system. */
+    open val commands: List<AddonCommand> = emptyList()
 
     /** Settings exposed to the client's settings UI and profile system. */
     open val settings: List<Setting> = emptyList()
