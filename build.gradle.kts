@@ -6,7 +6,7 @@ plugins {
 base {
     group = "me.miki"
     archivesName = "AddonAPI"
-    version = "1.0.3"
+    version = "1.0.4"
 }
 
 java {
