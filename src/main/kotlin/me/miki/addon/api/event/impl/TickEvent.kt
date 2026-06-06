@@ -1,5 +1,0 @@
-package me.miki.addon.api.event.impl
-
-import me.miki.addon.api.event.Event
-
-class TickEvent : Event()

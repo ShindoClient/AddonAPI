@@ -4,7 +4,7 @@ plugins {
 }
 
 base {
-    group = "me.miki"
+    group = "com.shindoclient"
     archivesName = "AddonAPI"
     version = "1.0.4"
 }
